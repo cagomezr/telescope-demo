@@ -215,6 +215,7 @@ article section p {
         background: var(--main-bg);
         box-shadow: 0px 0px 0px var(--box-shadow-color);
         transition: transform 0.4s ease, box-shadow 0.7s ease;
+		justify-content: flex-start;
     }
 
     #mobile-burger {
@@ -223,15 +224,22 @@ article section p {
     }
 
     #mobile-burger-close {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-		font-size:1.75em;
+        display: inline-block;
+    	position: static!important;
+		margin: .5em 1em 2em auto;
+    	font-size: 1.75em;
     }
-	.nav-button{
-		font-size: 1.25em;
+	.mobile-burgertest{
+		
+    	display: inline-block;
+    	position: static;
+		margin: .5em 1em .5em auto;
+    	font-size: 1.75em;
 	}
+	.nav-button{
+		font-size:1.25em;
+	}
+
     article section {
         margin-right: 0px;
         margin-left: 0px;
